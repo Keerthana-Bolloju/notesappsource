@@ -1,0 +1,6 @@
+<div class="d-flex flex-column py-4" [routerLink]="[index]" style="cursor:pointer;"routerLinkActive="activeNote" >
+    <div class="px-2">{{notes.name | shorten:40}}</div>
+    <div class="px-2">{{notes.createdOn | date:'shortTime'}}</div>
+  </div>
+  <hr>
+

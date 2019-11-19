@@ -1,0 +1,24 @@
+#desk-view{
+    display: none;
+}
+#mob-res{
+    display: block;
+}
+.scrollbar{      
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+
+@media screen and (min-width:786px){
+    #desk-view{
+        display: block;
+    }
+    #mob-res{
+        display: none;
+    } 
+    
+.height{
+    height: 100vh;  
+}
+}

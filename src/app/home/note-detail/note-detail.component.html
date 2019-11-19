@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-end py-2 px-5">
+    <div class="p-2">
+        <button type="button" class="btn btn-info" (click)="onEditNote()">&#9998;</button>
+    </div>
+
+    <div class="p-2">
+        <button type="button" class="btn btn-danger" (click)="onDeleteNote()">&#10008;</button>
+    </div>
+</div>
+<div class="d-flex justify-content-center flex-columnmb-3">
+    <div class="p-2">
+        <p>{{notes.createdOn |date:'long'}}</p>
+    </div>
+</div>
+
+<div class="d-flex align-items-start flex-columnmb-3">
+    <div class="p-2">
+        <p>{{notes.name}}</p>
+    </div>
+</div>

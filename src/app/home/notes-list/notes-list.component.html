@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-start py-3 px-2">
+  <div class="px-2">
+      <input type="text" [(ngModel)]="inputText" (input)="search()" placeholder="Search"
+      style="background:transparent;width: 100%;
+      border: none;
+      border-bottom: 1px solid rgb(212, 192, 192);">
+  </div>
+  <div class="px-2 ml-auto">
+      <button type="button" class="btn btn-primary" (click)="onAddNewNote()">Add Note</button>
+    </div>
+</div> 
+<div class="d-flex" *ngIf="notes.length == 0">
+    <h5 class="text-center">No data found. Please search with another keyword</h5>
+  </div>
+<div *ngFor="let note of notes;let i = index">
+<app-note [notes]="note" [index] = "i"></app-note>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default navbar-fixed-top bg-light" id="mob-res">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed ml-auto" data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle Notes List</span>
+        <span>&#9776;</span>
+      </button>
+      <a class="navbar-brand px-2" routerLink="['/notes-list']"> Notes App </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="nav navbar-nav navbar-right scrollbar">
+        <app-notes-list></app-notes-list>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 col-xs-12 bg-light height">
+      <div id="desk-view" class="scrollbar">
+        <h3 class="text-center p-3" routerLink="['/notes-list']">Notes App</h3>
+        <app-notes-list></app-notes-list>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+  </div>
